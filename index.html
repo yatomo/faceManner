@@ -65,16 +65,16 @@
         for (let i = 0; i < maxPredictions; i++) {
             if(prediction[0].probability.toFixed(2) > 0.8){
                 //safeの処理
-                document.body.style.backGroundCollor = "white";
+                document.bgColor = "#f0f8ff";
             } else if(prediction[1].probability.toFixed(2) > 0.8){
                 //noGlassesの処理
-                document.body.style.backGroundCollor = "red";
+                document.bgColor = "#ff0000";
             } else if(prediction[2].probability.toFixed(2) > 0.8){
                 //noMaskの処理
-                document.body.style.backGroundCollor = "red";
+                document.bgColor = "#ff0000";
             } else{
                 //noMask_noGlassの処理
-                document.body.style.backGroundCollor = "red";
+                document.bgColor = "#ff0000";
             }
 
             for (let i = 0; i < maxPredictions; i++) {
