@@ -67,6 +67,7 @@
             if(prediction[0].probability.toFixed(2) > 0.7){
                 //safeの処理
                 document.bgColor = "#f0f8ff";
+                document.fgColor = "#000000";
                 text.innerHTML = "準備OKです。さあ，うちを出よう！";
             } else if(prediction[1].probability.toFixed(2) > 0.7){
                 //noGlassesの処理
